@@ -1,0 +1,7 @@
+{
+  "name": "public-app-commerce",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

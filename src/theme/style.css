@@ -1,0 +1,639 @@
+.cnMainWrap {
+    height: 100vh;
+    background: #fff;
+}
+.cnMainWrap .prepare-data-inner {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+}
+.cnMainWrap .prepare-data-inner .cnLogo {
+    height: 75px;
+    width: 100px;
+    margin: 0 auto 30px auto;
+}
+
+.cnMainWrap .prepare-data-inner .cnLogo ion-img::part(image) {
+    height: auto;
+}
+
+.cnMainWrap .prepare-data-inner .cnLogo ion-thumbnail {
+    display: block;
+    width: 100%;
+}
+
+.cnMainWrap .swiper-container {
+    height: 100vh;
+}
+
+.cnMainWrap .prepare-data-loading {
+    width: 40px;
+    margin: 0 auto;
+}
+
+.custom-loader {
+    color: #000;
+}
+
+.cnOuter {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+.swiper-slide {
+    display: block !important;
+}
+
+.cnMiddle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.cnInner {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cnSplashImg {
+    width: 100%;
+    display: block;
+}
+
+.cnSplashImg ion-thumbnail {
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.cnSplashTxt {
+    width: 100%;
+    display: block;
+    margin: 20px 0 0 0;
+}
+
+.cnSplashTxt .cnTitle ion-label {
+    color: #0CAFE4;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.cnSplashTxt .cnText ion-label {
+    color: #697076;
+    font-size: 14px;
+    padding: 0 10%;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+}
+
+.splash-slider-wrapper .cnNext, .splash-slider-wrapper .cnContinue {
+    width: 40px;
+    height: 40px;
+    background: url(./images/btn-next.svg) 0 0 no-repeat;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+.splash-slider-wrapper .swiper-slide {
+    border: none !important;
+    outline: none !important;
+}
+
+.splash-slider-wrapper .swiper-slide:focus {
+    outline: none;
+}
+
+.splash-slider-wrapper .swiper-pagination {
+    bottom: 125px !important;
+}
+
+.splash-slider-wrapper .swiper-pagination-bullet {
+    border: 1px solid #1B7E9E;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    opacity: 1;
+}
+
+.splash-slider-wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #1B7E9E;
+}
+
+.splash-slider-wrapper .cnBack {
+    width: 40px;
+    height: 40px;
+    background: url(./images/btn-back.svg) 0 0 no-repeat;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+
+.splash-slider-wrapper .cnSkip {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.splash-slider-wrapper .cnSkip ion-button {
+    margin: 0px;
+    padding: 0px;
+}
+
+.splash-slider-wrapper .cnBack ion-button, .splash-slider-wrapper .cnNext ion-button, .splash-slider-wrapper .cnContinue ion-button {
+    margin: 0px;
+    padding: 0px;
+}
+
+.splash-slider-wrapper .cnBack ion-button::part(native), .splash-slider-wrapper .cnNext ion-button::part(native), .splash-slider-wrapper .cnContinue ion-button::part(native) {
+    font-size: 0px;
+    width: 40px;
+    height: 40px;
+    background: none;
+}
+
+.splash-slider-wrapper .cnSkip ion-button::part(native) {
+    background: none;
+    color: #0EAEE4;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.dashboard {
+    /* height: 100vh; */
+}
+
+.dashboardMainWrapper {
+    padding: 0 0 95px 0;
+}
+
+.dashboardMainWrapper .header {
+    height: 60px;
+    background: #fff;
+    border-radius: 0 0 25px 25px;
+    margin: 0 0 20px 0;
+}
+
+.dashboardMainWrapper .cnLogo {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+
+.dashboardMainWrapper .cnLogo ion-thumbnail {
+    width: 95px;
+    height: auto;
+}
+
+.dashboardMainWrapper .cnLanguage {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 80px;
+    top: 14px;
+}
+
+.dashboardMainWrapper .cnLanguage ion-select {
+    margin: 0px;
+    padding: 0px;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #B2D1E3;
+    border-radius: 10px;
+}
+
+.dashboardMainWrapper .cnLanguage ion-select::part(text) {
+    font-size: 12px !important;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: block !important;
+    color: #B2D1E3;
+}
+
+.dashboardMainWrapper .cnLanguage ion-select::part(icon) {
+    display: none !important;
+}
+
+.dashboardMainWrapper .menu-button {
+    height: 60px;
+    width: 40px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    background: url(./images/icon-menu.svg) center center no-repeat;
+    background-size: 100%;
+}
+
+.dashboardMainWrapper .menu-content-open .menu-button {
+    background: url(./images/icon-menu-close.svg) center center no-repeat !important;
+}
+
+.dashboardMainWrapper .menu-button ion-menu-button {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .menu-button ion-menu-button::part(native) {
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+    height: 60px;
+    width: 40px;
+    border-radius: 0px;
+}
+
+.dashboardMainWrapper .cnSearch {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.dashboardMainWrapper .cnSearch ion-searchbar {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .cnSearch .searchbar-input {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+}
+
+.dashboardMainWrapper .cnSearch .searchbar-input::placeholder {
+    color: #697076;
+    font-size: 16px;
+}
+
+.dashboardMainWrapper .sub-nav {
+    margin: 10px 0;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .sub-nav ion-grid {
+    margin: o auto;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .sub-nav ion-grid ion-row {
+    padding: 0px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.dashboardMainWrapper .sub-nav ion-grid ion-col {
+    margin: 0 5px;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .sub-nav ion-grid ion-col a {
+    color: #687A9C;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    padding: 0 5px;
+}
+
+.dashboardMainWrapper .sub-nav ion-grid ion-col a.active {
+    color: #ED6F20;
+}
+
+.dashboardMainWrapper .sub-nav ion-grid ion-col a.active::before {
+    background: #ED6F20;
+    height: 2px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    content: "";
+    left: 0px;
+}
+
+.dashboardMainWrapper .pricelist {
+    margin: 20px auto;
+    width: 85%;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-top {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-top ion-grid {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom {
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-pagination {
+    display: none;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-container {
+    padding: 0px;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-button-prev {
+    left: -26px;
+    top: 80px;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-button-next {
+    right: -26px;
+    top: 80px;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-button-next::after, .dashboardMainWrapper .pricelist .pricelist-bottom .swiper-button-prev::after {
+    display: none;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-button-prev ion-button::part(native) {
+    background: url(./images/arrow-prev.svg) 0 0 no-repeat;
+    background-size: 100%;
+    content: "";
+    width: 15px;
+    height: 40px;
+    font-size: 0px;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-button-next ion-button::part(native) {
+    background: url(./images/arrow-next.svg) 0 0 no-repeat;
+    background-size: 100%;
+    content: "";
+    width: 15px;
+    height: 40px;
+    font-size: 0px;
+}
+
+
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-slide:last-child {
+    margin-right: 0px;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-slide .slide-inner {
+    height: 140px;
+    width: 100%;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-slide:nth-child(odd) .slide-inner {
+    background: #B2D1E3;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-slide:nth-child(even) .slide-inner {
+    background: #8CA7BB;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .swiper-slide:nth-child(3n) .slide-inner {
+    background: #687A9C !important;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .slide-outer {
+    margin: 10px 0 0 0;
+    line-height: 14px;
+    text-align: left;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-bottom .slide-outer ion-label {
+    color: #64798E;
+    font-size: 12px !important;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-top ion-col:first-child {
+    float: left;
+    text-align: left;
+    color: #64798E;
+    font-size: 14px;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-top ion-col:last-child {
+    float: right;
+    text-align: right;
+}
+
+.dashboardMainWrapper .pricelist .pricelist-top ion-col:last-child a {
+    color: #8CA7BB;
+    font-size: 14px;
+}
+
+.dashboardMainWrapper .action-lists {
+    margin: 0 auto;
+    padding: 0px;
+    width: 85%;
+}
+
+.dashboardMainWrapper .action-lists ion-grid {
+    margin: 0px;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .action-lists ion-row {
+    margin: 0 0 15px 0;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .action-lists ion-col {
+    margin: 0 4% 0 0;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .action-lists ion-col:last-child {
+    margin: 0px;
+}
+
+.dashboardMainWrapper .action-lists ion-label {
+    display: block;
+    width: 100%;
+    color: #64798E;
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.dashboardMainWrapper .action-lists ion-button {
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.dashboardMainWrapper .footer {
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+    border-radius: 25px 25px 0 0;
+    padding: 15px 0 0 0;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.dashboardMainWrapper .footer ion-grid {
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .footer ion-grid ion-col {
+    width: 20%;
+    padding: 0 1%;
+}
+
+.dashboardMainWrapper .footer ion-button {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    height: 30px;
+}
+
+.dashboardMainWrapper .footer ion-label {
+    display: block;
+    color: #64798E;
+    font-size: 9px;
+    width: 100%;
+    white-space: pre-wrap;
+}
+
+.dashboardMainWrapper .footer ion-img {
+    width: 60%;
+    height: auto;
+    display: block;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .footer ion-img::part(image) {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.dashboardMainWrapper .footer ion-button::part(native) {
+    background: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.dashboardMainWrapper .footer ion-button.cnIcons {
+    margin: 0px;
+    padding: 0;
+    height: auto;
+}
+
+ion-content::part(background) {
+    background: #E8EBEE !important;
+}
+
+ion-toolbar {
+    --background: #E8EBEE !important;
+}
+
+ion-menu {
+    --background: #E8EBEE !important;
+}
+
+ion-item::part(native) {
+    background: #E8EBEE !important;
+    border-bottom: 1px solid #000;
+}
+
+.split-pane-side ion-label, .split-pane-side ion-title {
+    color: #64798E !important;
+}
+
+.removeLines {
+    --inner-border-width: 0;
+}
+
+.item-inner {
+    border-bottom-color: transparent !important;
+    box-shadow: none !important;
+}
+
+ion-list.list-md {
+    padding: 0px !important;
+}
+
+.not-hidden {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.hideBg {
+    height: 300px;
+}
+
+#main-content::part(background) {
+    display: none;
+}
+
+.transparentBg {
+    background: transparent !important;
+}
+
+.transparentBg {
+    background: none transparent;
+}
+
+#main-content {
+    background: #E8EBEE;
+}
+
+.cnProductCategoryListWrap .pricelist-bottom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cnProductCategoryListWrap .pricelist-bottom .product-list {
+    width: 30%;
+    float: left;
+    margin: 0 5% 5% 0;
+}
+
+.cnProductCategoryListWrap .pricelist-bottom .product-list a {
+    text-decoration: none;
+}
+
+.cnProductCategoryListWrap .pricelist-bottom .product-list:nth-child(3n+3) {
+    margin: 0 0 5% 0;
+}
+
+.cnProductCategoryListWrap .pricelist-bottom .product-list .slide-inner {
+    height: 125px;
+    border-radius: 10px;
+    background: #fff;
+}
+
+ion-button::part(native){
+    box-shadow: none !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+}
+
+ion-button::part(native):hover {
+    box-shadow: none !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+}
+
+ion-button::part(native):focus {
+    box-shadow: none !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+    outline: none !important;
+}

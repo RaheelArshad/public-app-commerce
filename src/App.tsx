@@ -1,7 +1,10 @@
 import { Redirect, Route } from 'react-router-dom';
-import { IonApp, IonRouterOutlet } from '@ionic/react';
+import { IonApp, IonRouterOutlet, IonPage, IonSplitPane } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import Home from './pages/Home';
+import Splash from './pages/Splash';
+import PrepareData from './pages/PrepareData';
+import Dashboard from './pages/Dashboard';
+import Menu from './components/Menu';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -21,20 +24,29 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './theme/style.css';
 
 const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
+	<IonApp>
+		<IonReactRouter>
+			<IonSplitPane contentId="main">
+				<Menu />
+				<IonPage id="main">
+					<IonRouterOutlet>
+						<Route exact path="/">
+							<Splash name={'splash'} />
+						</Route>
+						<Route exact path="/prepare-data">
+							<PrepareData name={'prepare_data'} />
+						</Route>
+						<Route exact path="/dashboard">
+							<Dashboard name={'dashboard'} />
+						</Route>
+					</IonRouterOutlet>
+				</IonPage>
+			</IonSplitPane>
+		</IonReactRouter>
+	</IonApp>
 );
 
 export default App;

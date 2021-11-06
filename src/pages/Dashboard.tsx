@@ -19,10 +19,6 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
 
     const history = useHistory();
     const [language, setLanguage] = useState('en');
-    // useEffect(() => {
-    //     console.log('ddsdsdssd');
-    //         history.push("/dashboard");
-    // }, []);
     return (
         <>
             <IonContent id="main-content">

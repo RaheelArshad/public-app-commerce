@@ -12,11 +12,9 @@ interface ContainerProps {
 }
 
 const FeaturedSlider: React.FC<ContainerProps> = ({ name }) => {
-
     const [sliderItems, setSliderItems] = useState<any | null>([]);
     const [swiper, setSwiper] = useState<any | null>();
     const [loading, setLoading] = useState(true);
-    
 
     //	function to go next slide
     const nextSlide = () => {
@@ -27,6 +25,8 @@ const FeaturedSlider: React.FC<ContainerProps> = ({ name }) => {
     const prevSlide = () => {
         swiper.slidePrev();
     }
+
+    
 
     //useEffect keep looping for fetch async
     useEffect(() => {
@@ -40,10 +40,12 @@ const FeaturedSlider: React.FC<ContainerProps> = ({ name }) => {
                         return json[n];
                     }
                 })
+                console.log(filtered_items);
                 setSliderItems(filtered_items);
                 setLoading(false)
             })
     }, [])
+
 
     return (
         <>
@@ -53,11 +55,13 @@ const FeaturedSlider: React.FC<ContainerProps> = ({ name }) => {
                         <div className="pricelist-slider">
                             {
                                 !loading && sliderItems && sliderItems.length > 0 ?
-                                    <Swiper
+                                <Swiper
                                         slidesPerView={3}
+                                        observer={true}
+                                        observeParents={true}
                                         spaceBetween={10}
                                         allowTouchMove={true}
-                                        pagination={{ clickable: false }}
+                                        pagination={{ clickable: true }}
                                         onSwiper={(swiper) => {
                                             setSwiper(swiper);
                                         }}
@@ -65,7 +69,7 @@ const FeaturedSlider: React.FC<ContainerProps> = ({ name }) => {
                                         {
 
                                             sliderItems.map((item: any, i: any) => (
-                                                <SwiperSlide key={i}>
+                                                <SwiperSlide key={`slide_${ i }`}>
                                                     <a href={'/product/' + item.id}>
                                                         <div className="slide-inner">
                                                         </div>
@@ -79,6 +83,7 @@ const FeaturedSlider: React.FC<ContainerProps> = ({ name }) => {
                                             ))
                                         }
                                     </Swiper>
+                                    
                                     : ''
                             }
                             <div className="swiper-navigation">

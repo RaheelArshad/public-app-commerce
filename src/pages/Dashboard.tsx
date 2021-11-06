@@ -4,6 +4,12 @@ import FeaturedSlider from '../components/FeaturedSlider'
 import { IonContent, IonGrid, IonRow, IonCol, IonMenuButton } from '@ionic/react';
 import Header from '../components/Header';
 import Search from '../components/Search';
+import {
+    useIonViewDidEnter,
+    useIonViewDidLeave,
+    useIonViewWillEnter,
+    useIonViewWillLeave
+  } from '@ionic/react';
 
 interface ContainerProps {
     name: string;
@@ -13,7 +19,10 @@ const Dashboard: React.FC<ContainerProps> = ({ name }) => {
 
     const history = useHistory();
     const [language, setLanguage] = useState('en');
-
+    // useEffect(() => {
+    //     console.log('ddsdsdssd');
+    //         history.push("/dashboard");
+    // }, []);
     return (
         <>
             <IonContent id="main-content">

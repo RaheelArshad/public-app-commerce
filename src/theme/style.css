@@ -388,7 +388,7 @@
 
 .dashboardMainWrapper .pricelist .pricelist-bottom .swiper-slide .slide-inner {
     height: 140px;
-    width: 100%;
+     width: 100% ; 
 }
 
 .dashboardMainWrapper .pricelist .pricelist-bottom .swiper-slide:nth-child(odd) .slide-inner {
